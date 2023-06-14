@@ -33,7 +33,6 @@ a {
   border-radius: 100%;
   margin: 10rem auto;
   display: none;
-  animation: spin 1s infinite linear;
 }
 
 #loading.display {
@@ -73,14 +72,14 @@ a {
   color: #af8600;
 }
 
-.product-name {
+/* .product-name {
   font-size: 1.4rem;
 }
 
 .product-description {
   margin: 1.2 rem 0;
   color: #303030;
-}
+} */
 
 .card-footer {
   display: flex;
@@ -112,7 +111,6 @@ a {
   display: none;
   top: 0;
   left: 0;
-  z-index: 100;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);

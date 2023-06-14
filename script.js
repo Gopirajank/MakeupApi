@@ -28,20 +28,15 @@ async function fetchProducts() {
           </div>
         </div>`;
       container.insertAdjacentHTML("beforeend", card);
-       const cardEventListener = document
+      const cardEventListener = document
         .querySelector(".card:last-child")
         .addEventListener("click", function () {
           showModal(product);
-      });
-
-      const button = document.querySelector(".card:last-child .button");
-      button.onclick = (event) => {
-        event.stopPropagation();
-        return true;
-      };
+        });
     });
   } catch (error) {
-    console.log(" Error" + error);
+    console.log("Error: " + error);
     location.reload();
   }
 }
+
